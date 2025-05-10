@@ -369,9 +369,9 @@ class GamePlayer:
                 total_opposite_top += self.opposite_top
             total += tries
         print(f"Stats for {number-lost} games played:")
-        print(f"Highest turns per game: {highest}")
-        print(f"Lowest turns per game: {lowest}")
-        print(f"Mean turns per game: {total / number:.2f}")
+        print(f"Highest guesses per game: {highest}")
+        print(f"Lowest guesses per game: {lowest}")
+        print(f"Mean guesses per game: {total / number:.2f}")
         print(f"Games abandoned: {lost}")
         if total_non_noisy_games:
             print(
