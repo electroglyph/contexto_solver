@@ -45,7 +45,7 @@ After I had my initial code written I noticed that something seemed a little off
 
 I wanted to compare how my embedding model was ordering top words compared to how contexto.me was ordering them.
 
-I played some games, and saved the all the words chosen, their vectors, and their contexto.me distance scores.
+I played some games, and saved all the words chosen, their vectors, and their contexto.me distance scores.
 
 For each game the list is sorted by contexto score, with 0 (the winner) being at the top.
 
