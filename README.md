@@ -250,6 +250,8 @@ Per-game metrics are at the top. To get the error for each word guess I subtract
 
 Per-run metrics (i.e. for multiple games) are just divided by the total games.  However, not every game uses every strategy, so to keep it accurate I also keep track of which strategies each game actually uses.
 
+Best word guess metrics are just how often each strategy picked a new best guess.
+
 ## How to improve?
 
 If I were to continue looking at this I would probably convert & test more sentence-transformers models. Contexto.me is multilingual and has been around for a few years, so that should give me a hint regarding the models to look at.
