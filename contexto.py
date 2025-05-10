@@ -1,3 +1,4 @@
+# Copyright 2025 Matthew Geyer
 # pip install requests numpy qdrant_client fastembed nltk
 import nltk
 from nltk.corpus import wordnet
@@ -27,8 +28,6 @@ CLIENT_URL = "http://127.0.0.1"
 CLIENT_PORT = 6333
 CLIENT_GRPC_PORT = 6334
 CLIENT_USE_GRPC = True
-# TEXTMODEL = "BAAI/bge-small-en-v1.5"
-
 TEXTMODEL = "jinaai/jina-embeddings-v2-small-en"
 RERANKER = "jinaai/jina-reranker-v2-base-multilingual"
 
