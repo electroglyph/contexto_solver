@@ -10,7 +10,7 @@ There's a `collect_words()` function for grabbing words from contexto.me. I've a
 
 Qdrant will need to be running on the local machine, or you can edit the options at the top of the script to connect to your Qdrant instance of choice.
 
-By default 2 fastembed models will be downloaded: "jinaai/jina-embeddings-v2-small-en", "jinaai/jina-reranker-v2-base-multilingual"
+By default 2 Fastembed models will be downloaded: "jinaai/jina-embeddings-v2-small-en" and "jinaai/jina-reranker-v2-base-multilingual"
 
 The nltk WordNet corpus will also be downloaded on first run, but it's small.
 
