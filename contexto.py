@@ -336,6 +336,7 @@ class GamePlayer:
             print(f"Playing game: {x + 1}")
             won, tries, _ = self.replay(reset)
             reset = True
+            e = 1e-9
             if not won:
                 lost += 1
                 continue
@@ -343,28 +344,28 @@ class GamePlayer:
                 lowest = tries
             if tries > highest:
                 highest = tries
-            if self.non_noisy_error:
-                total_non_noisy_error += self.non_noisy_error / self.non_noisy_tries
+            if self.non_noisy_tries:
+                total_non_noisy_error += (self.non_noisy_error + e) / self.non_noisy_tries
                 total_non_noisy_games += 1
                 total_non_noisy_top += self.non_noisy_top
-            if self.noisy_mean_error:
-                total_noisy_mean_error += self.noisy_mean_error / self.noisy_mean_tries
+            if self.noisy_mean_tries:
+                total_noisy_mean_error += (self.noisy_mean_error + e) / self.noisy_mean_tries
                 total_noisy_mean_games += 1
                 total_noisy_mean_top += self.noisy_mean_top
-            if self.noisy_best_error:
-                total_noisy_best_error += self.noisy_best_error / self.noisy_best_tries
+            if self.noisy_best_tries:
+                total_noisy_best_error += (self.noisy_best_error + e) / self.noisy_best_tries
                 total_noisy_best_games += 1
                 total_noisy_best_top += self.noisy_best_top
-            if self.move_vec_error:
-                total_move_vec_error += self.move_vec_error / self.move_vec_tries
+            if self.move_vec_tries:
+                total_move_vec_error += (self.move_vec_error + e) / self.move_vec_tries
                 total_move_vec_games += 1
                 total_move_vec_top += self.move_vec_top
-            if self.synonym_error:
-                total_synonym_error += self.synonym_error / self.synonym_tries
+            if self.synonym_tries:
+                total_synonym_error += (self.synonym_error + e) / self.synonym_tries
                 total_synonym_games += 1
                 total_synonym_top += self.synonym_top
-            if self.opposite_error:
-                total_opposite_error += self.opposite_error / self.opposite_tries
+            if self.opposite_tries:
+                total_opposite_error += (self.opposite_error + e) / self.opposite_tries
                 total_opposite_games += 1
                 total_opposite_top += self.opposite_top
             total += tries
