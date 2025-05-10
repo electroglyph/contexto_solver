@@ -1,6 +1,6 @@
 ## Contexto.me solver
 
-This is my attempt at a Contexto.me solver.  First I'll go over the preparation I did, then the strategy I settled on, and after that I'll share a little bit about what didn't work.
+This is my attempt at a Contexto.me solver.
 
 ![screenshot](./screenshot.png)
 
