@@ -264,7 +264,7 @@ class GamePlayer:
         # word guesses higher than this will count as an error
         # afer self.error_run errors, alternate strategies will be tried
         self.priority_threshold = 2_000
-        # if contexto dist >= this, ignore it and error_run += 1
+        # if contexto dist >= this and fast_fail is on, abandon current strategy
         self.reject_threshold = 5_000
         self.noisy_mean = False
         self.noisy_best = False
