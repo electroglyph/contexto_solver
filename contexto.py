@@ -609,7 +609,9 @@ class GamePlayer:
         """
         r_msg = " [reranking: on]" if self.rerank else ""
         t_msg = ""
-        if self.noisy_mean:
+        if self.non_noisy:
+            t_msg = " [type: non_noisy]"
+        elif self.noisy_mean:
             t_msg = " [type: noisy_mean]"
         elif self.noisy_best:
             t_msg = " [type: noisy_best]"
