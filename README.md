@@ -222,6 +222,19 @@ Strategy to help the solver get unstuck:
 
 - After returning from every strategy, if more than 25 tries have passed since last random word, try a random word.
 
+## Example of shifting one word closer to another
+
+```
+python .\contexto.py -t green house
+Collection 'contexto' already exists, skipping init.
+31520 points in collection.
+top 10 results closest to green:
+green, greenish, greenies, greening, greenback, colored, greene, greenery, color, greengrocer
+------------------------------------------------------
+top 10 results closest to new vector:
+green, house, greenback, greenery, greenish, greenies, greenhouse, greening, garden, greene
+```
+
 ## Statistics
 
 Each run produces per-game and per-run metrics.

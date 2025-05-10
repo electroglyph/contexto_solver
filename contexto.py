@@ -1037,7 +1037,7 @@ def move_word_test(
         limit=10,
     )
 
-    print(f"top 10 results closest to {from_word}:")
+    print(f"top 10 results closest to {word1}:")
     print(f"{', '.join(p.payload["word"] for p in before.points)}")
     print("------------------------------------------------------")
     print("top 10 results closest to new vector:")
