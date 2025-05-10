@@ -41,7 +41,7 @@ options:
 
 ## Embedding model analysis
 
-After I had my initial code written I noticed that something seemed a little off with the word choices. I was using `BAAI/bge-small-en-v1.5` because it's fastembed's default, and it's a good default.
+After I had my initial code written I noticed that something seemed a little off with the word choices. I was using `BAAI/bge-small-en-v1.5` because it's Fastembed's default, and it's a good default.
 
 I wanted to compare how my embedding model was ordering top words compared to how contexto.me was ordering them.
 
@@ -216,11 +216,11 @@ Optional strategies:
 
 - "fast_fail" = If a guess' distance is beyond the set threshold, immediately abandon the current strategy.
 
-- reranker = enable the reranking model. Not sure how much impact it has. I decided against including other additional models after my model comparison above. I'm not confident how well they would match up to contexto's own distance metric.
+- reranker = enable the reranking model. Not sure how much impact it has. I decided against including other additional models after my model comparison above. I'm not sure how well they would match up to contexto's own distance metric.
 
 Strategy to help the solver get unstuck:
 
-- After returning from every strategy, if more than 25 tries have passed, try a random word.
+- After returning from every strategy, if more than 25 tries have passed since last random word, try a random word.
 
 ## Statistics
 
