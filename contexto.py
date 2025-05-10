@@ -68,7 +68,7 @@ def add_noise(vec, norm=True):
     """Add Gaussian noise to a vector and optionally re-normalize it"""
     noise_level = random.uniform(0.02, 0.08)
     vec = np.asarray(vec, dtype=np.float32)
-    noise = np.random.normal(0, noise_level, vec.shape).astype(np.float32)
+    noise = np.random.normal(0, noise_level, vec.shape)
     noisy_embedding = vec + noise
     if norm:
         original_norm = np.linalg.norm(vec)
