@@ -274,3 +274,32 @@ I just realized after writing this that I don't have a deterministic mode that c
 ## Performance
 
 It doesn't seem terribly great? Some games are solved in 20 guesses, others in 200. Sometimes there are very bad games and it's difficult to get the game unstuck. I haven't run a big benchmark yet, but if I do I'll post the stats here.
+
+Stats for 100 games, opposite on, reranking off:
+
+Stats for 100 games played:
+Highest guesses per game: 4076
+Lowest guesses per game: 37
+Mean guesses per game: 476.13
+Games abandoned: 0
+non_noisy error average per guess per game: 8049.50, non_noisy best guess average per game: 1.28
+noisy_mean error average per guess per game: 11259.48, noisy_mean best guess average per game: 2.03
+noisy_best error average per guess per game: 13088.42, noisy_best best guess average per game: 1.75
+move_vec error average per guess per game: 12107.91, move_vec best guess average per game: 1.62
+synonym error average per guess per game: 17208.26, synonym best guess average per game: 0.49
+opposite error average per guess per game: 23891.71, opposite best guess average per game: 0.44
+
+-----------
+
+Stats for 100 games, opposite off, reranking on:
+
+Stats for 100 games played:
+Highest guesses per game: 2099
+Lowest guesses per game: 24
+Mean guesses per game: 348.36
+Games abandoned: 0
+non_noisy error average per guess per game: 7003.48, non_noisy best guess average per game: 1.09
+noisy_mean error average per guess per game: 9109.68, noisy_mean best guess average per game: 2.02
+noisy_best error average per guess per game: 11436.08, noisy_best best guess average per game: 1.86
+move_vec error average per guess per game: 10970.91, move_vec best guess average per game: 1.32
+synonym error average per guess per game: 15436.34, synonym best guess average per game: 1.01
