@@ -599,6 +599,8 @@ class GamePlayer:
             self.synonym_top += 1
         elif self.opposite:
             self.opposite_top += 1
+        elif self.move_vec:
+            self.move_vec_top += 1
         self.error_run = 0
 
     def info_message(self, word: str, distance: int):
@@ -669,6 +671,7 @@ class GamePlayer:
             return
         if distance < self.best_dist:
             self.best_message(word, distance)
+            
         self.update_stats(distance)
         self.tried_words.append(word)
         self.results.append((distance, id, vec, word))
