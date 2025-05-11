@@ -291,9 +291,10 @@ synonym error average per guess per game: 17208.26, synonym best guess average p
 opposite error average per guess per game: 23891.71, opposite best guess average per game: 0.44
 ```
 -----------
-```
+
 Stats for 100 games, opposite off, reranking on:
 
+```
 Stats for 100 games played:
 Highest guesses per game: 2099
 Lowest guesses per game: 24
